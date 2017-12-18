@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class App {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext appContext=new ClassPathXmlApplicationContext("springConfiguraton");
+        ClassPathXmlApplicationContext appContext=new ClassPathXmlApplicationContext("springConfiguration.xml");
         TestService testService= (TestService) appContext.getBean("testService");
         List resultList=null;
         try {
