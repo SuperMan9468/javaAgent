@@ -1,6 +1,5 @@
-尝试是否可以直接使用SpringAop 技术实现com.mysql.cj.jdbc.NonRegisteringDriver.connect(..)方法的监听，
+mastre尝试直接使用SpringAop 技术实现com.mysql.cj.jdbc.NonRegisteringDriver.connect(..)方法的监听，
 最后发现根本不可能，因为数据源（本案例使用的是BasicDataSource）在获取连接的时候使用的对象根本不是你自己
 配置aop后产生的那个代理对象，导致监控失败。这个也是spring事务使用中导致事务不起作用的一个原因。
 
-解决方案：为了解决SpringAop不能实现上述监控的问题，要考虑使用javaagent+javassist技术。所以考虑建立一个
-git分支 来研究javaagent+javassist技术
+解决方案：本分支javaAgent考虑使用javaagent+javassist技术。
