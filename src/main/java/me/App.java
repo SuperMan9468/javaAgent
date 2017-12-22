@@ -21,6 +21,6 @@ public class App {
             e.printStackTrace();
             System.out.println("数据查询异常!");
         }
-        System.out.println("Hello World!");
+        System.out.println("Hello World!ZGQ");
     }
 }

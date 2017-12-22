@@ -7,6 +7,8 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
+
+
   <name>agentWatch</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -78,6 +80,12 @@
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
       <version>1.8.10</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+    <dependency>
+      <groupId>org.javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.20.0-GA</version>
     </dependency>
   </dependencies>
 </project>
